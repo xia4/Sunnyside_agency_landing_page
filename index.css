@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: #000;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+section {
+    width: 1440px;
+}
+header {
+    background-image: url(./images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 1440px;
+    height: 800px;
+}
+nav {
+    width: 1352px;
+    height: 56px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    width: 170px;
+    height: 33px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 467px;
+}
+nav ul li {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+nav ul li a {
+    color: #fff;
+}
+nav ul li button {
+    width: 140px;
+    height: 56px;
+    border-radius: 28px;
+    border: none;
+    color: #000;
+    font-family: 'Fraunces', serif;
+    letter-spacing: 1px;
+}
+header h1 {
+    font-size: 56px;
+    text-align: center;
+    margin-top: 59px;
+    color: #fff;
+    font-family: 'Fraunces', serif;
+    letter-spacing: 8.75px;
+}
+main .card {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,200px); */
+    width: 1440px;
+    height: 1800px;
+}
+main .card .brand {
+    width: 720px;
+    height: 600px;
+    float: left;
+}
+main .card  .margin {
+    width: 445px;
+    height: 285px;
+    margin: 158px;
+}
+.card  h1 {
+    font-size: 40px;
+    font-family: 'Fraunces', serif;
+    color: #24303e;
+   margin-bottom: 32px;
+}
+.card p {
+    font-size: 18px;
+    color: #808397;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+.card button {
+    width: 137px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    border-bottom: 10px solid #fad400;
+    font-size: 15px;
+    font-family: 'Fraunces', serif;
+    padding-top: 4px;
+}
+.card .audience .margin button {
+    border-bottom: 10px solid #fe7766;
+    
+}
+.card .egg {
+    width: 720px;
+    height: 600px;
+    float: right;
+}
+.card .egg img {
+    width: 100%;
+}
+.card .stand {
+    width: 720px;
+    height: 600px;
+    float: left;
+}
+.card .audience {
+    width: 720px;
+    height: 600px;
+    float: right;
+}
+.card .cherry {
+    width: 720px;
+    height: 600px;
+    float: left;
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+}
+.card .cherry .cherry_info {
+    width: 339px;
+    height: 143px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 380px;
+}
+.card .cherry .cherry_info h1 {
+    margin-bottom: 27px;
+    color: #24554a;
+    font-size: 28px;
+}
+.card .cherry .cherry_info p {
+    color: #3e7467;
+    font-size: 16px;
+    line-height: 27px;
+}
+.card .orange {
+    width: 720px;
+    height: 600px;
+    float: right;
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+}
+.card .orange .orange_info {
+    width: 339px;
+    height: 143px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 380px;
+}
+.card .orange .orange_info h1 {
+    margin-bottom: 27px;
+    color: #052c3b;
+    font-size: 28px;
+}
+.card .orange .orange_info p {
+    color: #19536c;
+    font-size: 16px;
+    line-height: 27px;
+}
+.client {
+    width: 1440px;
+    height: 777px;
+}
+.client h1 {
+    font-size: 20px;
+    font-family: 'Fraunces', serif;
+    text-align: center;
+    margin-top: 160px;
+    color: #a7aaad;
+    letter-spacing: 5px;
+}
+.client .user {
+    margin: 80px 165px;
+    display: flex;
+    justify-content: space-between;
+}
+.client .user img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+.client .user .emily {
+    width: 350px;
+    height: 351px;
+    text-align: center;
+}
+.client .user .thomas {
+    width: 350px;
+    height: 351px;
+    text-align: center;
+}
+.client .user .jennie {
+    width: 350px;
+    height: 351px;
+    text-align: center;
+}
