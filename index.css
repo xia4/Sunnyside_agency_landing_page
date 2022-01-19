@@ -73,6 +73,9 @@ nav img {
     width: 170px;
     height: 33px;
 }
+.nav_toogleBtn {
+    display: none;
+}
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -287,6 +290,9 @@ footer {
     height: 797px;
     background: #90D4C6;
 }
+footer .mb_group {
+    display: none;
+}
 footer .group {
     display: flex;
 }
@@ -321,4 +327,197 @@ footer .bottom .icon {
     justify-content: space-between;
     width: 164px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 375px) {
+    section {
+        width: 375px;
+    }
+    header {
+        width: 375px;
+        height: 538px;
+        background-image: url(./images/mobile/image-header.jpg);
+        background-repeat: no-repeat;
+    }
+    header h1 {
+        width: 327px;
+        height: 98px;
+        font-size: 40px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    nav{
+        width: 327px;
+        height: 24px;
+        margin-bottom: 88px;
+        padding-top: 30px;
+        padding-left: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav img {
+        width: 123px;
+        height: 24px;
+        
+    }
+    nav ul {
+        flex-direction: column;
+        width: 329px;
+        height: 329px;
+        background-color: #fff;
+        z-index: 1;
+        margin-top: 50px;
+        display: none;
+        position: relative;
+    }
+    nav ul::after {
+        border-top: 0px solid transparent;
+        border-left: 25px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 25px solid #fff;
+        content: "";
+        position: absolute;
+        top: -25px;
+        right: 0;
+
+    }
+    nav .nav_menu.active {
+        display: flex;
+    }
+    nav ul li {
+        padding-bottom: 32px;
+    }
+    nav ul li:nth-child(1) {
+        padding-top: 39px;
+    }
+    nav ul li:nth-child(4) {
+        padding-bottom: 39px;
+    }
+    nav ul li button {
+        background-color: #FBD600;
+    }
+    nav ul li a {
+        color: #808397;
+
+    }
+    header .nav_toogleBtn {
+        display: block;
+        width: 24px;
+        height: 18px;
+        position: absolute;
+        right: 24px;
+        top: 30px;
+    }
+    header .arrow {
+        width: 30px;
+        height: 107px;
+    }
+    header .nav_toogleBtn img {
+        width: 100%;
+    }
+    main {
+        margin-bottom: 86px;
+    }
+    main .card {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    main .card .brand {
+        width: 375px;
+        height: 437px;
+    }
+    main .card .brand .margin {
+        margin: 64px auto;
+        width: 327px;
+        height: 309px;
+        text-align: center;
+    }
+    main .card .egg {
+        order: -1;
+        width: 375px;
+        height: 312px;
+    }
+    main .card .stand {
+        width: 375px;
+        height: 312px;
+    }
+    main .card .stand img {
+        width: 100%;
+    }
+    main .card .audience {
+        width: 375px;
+        height: 437px;
+    }
+    main .card .audience .margin {
+        margin: 64px auto;
+        width: 327px;
+        height: 309px;
+        text-align: center;
+    }
+    main .card .cherry {
+        width: 375px;
+        height: 600px;
+        background-image: url(./images/mobile/image-graphic-design.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    main .card .orange {
+        width: 375px;
+        height: 600px;
+        background-image: url(./images/mobile/image-photography.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    main .client {
+        width: 375px;
+        height: 1268px;
+    }
+    main .client h1 {
+        margin-bottom: 64px;
+    }
+    main .client .user {
+        flex-direction: column;
+        margin: 0;
+    }
+    main .client .user .emily {
+        width: 327px;
+        height: 288px;
+        margin: 0 auto;
+        margin-bottom: 64px;
+    }
+    main .client .user .user_info {
+        width: 327px;
+        height: 96px;
+        margin: 32px 0;
+    }
+    main .client .user .thomas {
+        width: 327px;
+        height: 320px;
+        margin: 0 auto;
+        margin-bottom: 64px;
+    }
+    main .client .user .jennie {
+        width: 327px;
+        height: 288px;
+        margin: 0 auto;
+    }
+    footer {
+        height: 725px;
+    }
+    footer .group {
+        display: none;
+    }
+    footer .mb_group {
+        width: 375px;
+        height: 375px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer .mb_group img {
+        width: 187.5px;
+        height: 188px;
+    }
 }

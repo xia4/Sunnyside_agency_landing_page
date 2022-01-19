@@ -7,22 +7,23 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./index.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-  
+  <script src="./main.js" defer></script>
 </head>
 <body>
   <section>
     <header>
       <nav>
         <img src="./images/logowh.svg" alt="" >
-        <ul>
+        <ul class="nav_menu">
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Projects</a></li>
           <li><button>CONTACT</button></li>
         </ul>
       </nav>
+      <a href="#" class="nav_toogleBtn"><img src="./images/icon-hamburger.svg" alt=""></a>
       <h1>WE ARE CREATIVES</h1>
-      <img src="./images/icon-arrow-down.svg" alt="">
+      <img src="./images/icon-arrow-down.svg" alt="" class="arrow">
     </header>
     <main>
       <div class="card">
@@ -39,8 +40,8 @@
           <div class="stand">
             <img src="./images/desktop/image-stand-out.jpg" alt="">
           </div>
-          <div class="audience">
-            <div class="margin" data-aos="fade-left">
+          <div class="audience" data-aos="zoom-in">
+            <div class="margin" >
               <h1>Stand out to the right audience</h1>
               <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
               <button>LEARN MORE</button>
@@ -95,6 +96,12 @@
         <img src="./images/desktop/image-gallery-orange.jpg" alt="">
         <img src="./images/desktop/image-gallery-cone.jpg" alt="">
         <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="">
+      </div>
+      <div class="mb_group">
+        <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="">
+        <img src="./images/mobile/image-gallery-orange.jpg" alt="">
+        <img src="./images/mobile/image-gallery-cone.jpg" alt="">
+        <img src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="">
       </div>
       <div class="bottom">
         <img src="./images/logo.svg" alt="" class="logo">
